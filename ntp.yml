@@ -1,14 +1,5 @@
+- name: visualizar
   hosts: all
   tasks:
-    - name: Estado-NTP
-      command: timedatectl status
-      register: salida
-    - name: visualizar
-      debug: var=salida.stdout_lines
-
-#    - name: HDD
-#    #      command: df -h
-#    #      register: salida
-#    #    - name: visualizar
-#    #      debug: var=salida.stdout
-~
+- name: Estado-NTP
+command: timedatectl status
