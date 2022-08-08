@@ -1,5 +1,5 @@
-- name: visualizar
+name: visualizar
   hosts: all
   tasks:
-- name: Estado-NTP
+name: Estado-NTP
 command: timedatectl status
