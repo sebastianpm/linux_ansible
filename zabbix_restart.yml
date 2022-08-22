@@ -1,0 +1,12 @@
+
+---
+- name: service module demo
+  hosts: all
+  become: true
+  tasks:
+    - name: service zabbix restart
+      ansible.builtin.service:
+        name: zabbix-agent2
+        state: restarted
+        enabled: true
+
