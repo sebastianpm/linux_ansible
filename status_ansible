@@ -1,0 +1,12 @@
+- name: checking service status
+  hosts: all
+  tasks:
+  - name: checking service status
+    command: systemctl status "{{ item }}"
+    with_items:
+    - zabbix-agent2
+    register: result
+    ignore_errors: yes
+  - name: showing report
+    debug:
+     var: result
