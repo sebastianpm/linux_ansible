@@ -1,0 +1,9 @@
+   - hosts: all
+     become: yes
+     tasks:
+             - name: 'Cambiar zona horaria a America/Santiago'
+               timezone:
+                     name: America/Santiago
+             - name: Ansible date fact example
+               debug:
+                     msg="{{ lookup('pipe','date +%Y-%m-%d-%H-%M-%S')}}"
