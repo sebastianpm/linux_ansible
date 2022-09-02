@@ -4,7 +4,7 @@
     - name: copying file with playbook
       become: true
       copy:
-        src: ./var/lib/awx/public/southamerica
+        src: /var/lib/awx/southamerica
         dest: /home/ansible
         owner: ansible
         mode: 0644
