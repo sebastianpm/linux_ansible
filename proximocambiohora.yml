@@ -1,0 +1,10 @@
+---
+- name: Revision cambio de hora
+  hosts: all
+  become: yes
+  tasks:
+  
+    - name: Revision Cambio de hora
+      shell: zdump -v America/Santiago | grep 2022
+      register: newhora
+    - debug: var=newhora.stdout_lines
