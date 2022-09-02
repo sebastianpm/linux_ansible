@@ -4,8 +4,8 @@
     - name: copying file with playbook
       become: true
       copy:
-        src: ~/southamerica
-        dest: /
+        src: win_ping.yml
+        dest: /home/ansible
         owner: ansible
         mode: 0644
 
