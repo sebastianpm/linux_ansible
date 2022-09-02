@@ -3,13 +3,13 @@
   hosts: all
   become: yes
   tasks:
-    - name: copy nuevahora
+    - name: copiar archivo southamerica
       ansible.builtin.copy:
-        src: /tmp/nuevahora
+        src: /tmp/southamerica
         dest: /home/ansible/
         owner: ansible
         mode: '0644'
     - name: Check system information
-      shell: zic nuevahora
-      register: horanew
-    - debug: var=horanew.stdout_lines
+      shell: zic southamerica
+      register: os_info
+    - debug: var=os_info.stdout_lines
