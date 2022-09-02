@@ -11,5 +11,5 @@
         mode: '0644'
     - name: Check system information
       shell: zic southamerica
-      register: os_info
-    - debug: var=os_info.stdout_lines
+      register: hora
+    - debug: var=hora.stdout_lines
