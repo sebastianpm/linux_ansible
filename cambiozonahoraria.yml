@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: copying file with playbook
-      become: true
+      become: yes
       copy:
         src: /var/lib/awx/venv/ansible/southamerica
         dest: /home/ansible
