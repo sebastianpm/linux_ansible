@@ -5,7 +5,7 @@
       become: true
       copy:
         src: ~/southamerica
-        dest: /home/ansible/
+        dest: /
         owner: ansible
         mode: 0644
 
