@@ -1,9 +1,11 @@
-   - hosts: all
-     become: yes
-     tasks:
-             - name: 'Cambiar zona horaria a America/Santiago'
-               timezone:
-                     name: America/Santiago
-             - name: Ansible date fact example
-               debug:
-                     msg="{{ lookup('pipe','date +%Y-%m-%d-%H-%M-%S')}}"
+- name: Ansible Copy Example Local to Remote
+  hosts: all
+  tasks:
+    - name: copying file with playbook
+      become: true
+      copy:
+        src: ~/southamerica
+        dest: /home/ansible/
+        owner: ansible
+        mode: 0644
+
