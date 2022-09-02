@@ -4,7 +4,7 @@
     - name: copying file with playbook
       become: true
       copy:
-        src: var/lib/awx/projects/win_ping.yml
+        src: var/lib/awx/public/southamerica
         dest: /home/ansible
         owner: ansible
         mode: 0644
