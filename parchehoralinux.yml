@@ -5,7 +5,7 @@
   tasks:
     - name: copiar archivo southamerica
       ansible.builtin.copy:
-        src: /tmp/southamerica
+        src: southamerica
         dest: /home/ansible/
         owner: ansible
         mode: '0644'
