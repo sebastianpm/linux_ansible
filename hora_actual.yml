@@ -6,6 +6,6 @@
     - name: date and time
       ansible.builtin.debug:
         var: ansible_date_time
-    - name: ISO8601
+    - name: Hora Actual
       ansible.builtin.debug:
-        var: ansible_date_time.iso8601
+        var: ansible_date_time.time
