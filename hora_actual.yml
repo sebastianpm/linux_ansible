@@ -1,7 +1,7 @@
 ---
 - name: date and time demo
   hosts: all
-  serial: "70%"
+  serial: "80%"
   gather_facts: true
   tasks:
     - name: date and time
