@@ -2,6 +2,7 @@
 ---
 - name: service module demo
   hosts: all
+  gather_facts: false
   become: true
   tasks:
     - name: service zabbix restart
