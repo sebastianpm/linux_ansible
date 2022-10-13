@@ -1,0 +1,13 @@
+---
+- name: Cambiar clave Usuario
+  hosts: all
+  become: true
+  vars:
+    myuser: "demo"
+    mypassword: "clave123$$"
+  tasks:
+    - name: change password
+      ansible.builtin.user:
+        name: "{{ myuser }}"
+        state: present
+        password: "{{ mypassword | password_hash('sha512') }}"
