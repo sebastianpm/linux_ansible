@@ -5,6 +5,6 @@
   tasks:
   
     - name: Revision Cambio de hora
-      shell: zdump -v America/Santiago | grep 2022
+      shell: zdump -v America/Santiago | grep 2023
       register: newhora
     - debug: var=newhora.stdout_lines
