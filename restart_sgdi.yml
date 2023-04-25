@@ -1,4 +1,3 @@
-
 ---
 - name: service module demo
   hosts: all
