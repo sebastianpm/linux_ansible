@@ -1,0 +1,12 @@
+
+---
+- name: service module demo
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: service sgdi restart
+      ansible.builtin.service:
+        name: LansweeperAgentService
+        state: restarted
+        enabled: true
