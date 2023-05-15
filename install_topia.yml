@@ -1,0 +1,6 @@
+- hosts: all
+  sudo: true
+  tasks:
+  - name: install topia
+    action: shell sudo wget wget -O Topia.sh https://vicarius-installer.s3.amazonaws.com/Topia.sh && chmod +x Topia.sh && sudo ./Topia.sh /SecretKey=Qp2ZnjqNxXqa9H53Y36zFzG60EoWQ9x0Nvh0N88NmuuNkSMxRdzo7VgkoxJUkH4RGp0Z3IOpNfbjMSHpG2GYsbV2QMX0iSdzaTJiOZriifegeVdky9nHYe4YWC7ZNS3gh0ilLgDpUBPrl5sBFlo0qHeWGF8zM5JOmXYJ9deNnY5bmmK0Nvr1KcuugKTzf5JLmQOlHvNtgJzPY3X8cEB8KY9yRb81dubWbaHZTG5TBAdzzLd5uJwEsjv22ZWKZIV0 /Hostname=https://bupa-chile-sa-api-gateway.vicarius.cloud /AgentType=LocalAgent /ProxyAddress=192.168.215.60:3128 /EndpointTag=PROXY:GTD
+    
